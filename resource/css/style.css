@@ -1,0 +1,480 @@
+
+/*   basic component*/
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+
+font-size: 64.5%;
+scroll-behavior:smooth;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height:1.3;
+    transition:.5s;
+    font-size: 1.6rem;
+}
+ul li{
+    list-style-type: none;
+}
+h1{
+ font-size:4.2rem;
+  color:#fff;
+}
+.clearfix::after{
+    content: "";
+    display:table;
+    clear:both;
+    visibility: hidden;
+    height:0;
+}
+h4{
+    font-family: 1.8rem;
+    margin-top: 2.4rem;
+    font-weight:300;
+    text-transform: uppercase;
+}
+/********* button********/
+.btn:link,.btn:visited,.btn{
+    background: #333;
+    color:#fff;
+    padding:1rem 5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom:.3rem solid #000;
+    display:inline-block;
+    margin-top: 4.5rem;
+    }
+
+/*--------------   reusable  component------------------*/
+.row{
+max-width: 120rem;
+margin: 0 auto;
+}
+
+section {
+     padding: 8rem 0;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+h2::after{
+    content:"";   
+    display: block;
+    width:8.5rem;
+    height: .4rem;
+    background:white;
+    margin: auto;
+    
+} 
+h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box{
+    padding:1%;
+
+}
+.box p{
+    font-size: 1.6rem;
+    font-weight:300;
+    margin-top: 2rem;
+    color:#fff;
+}
+/*little description paragraph*/
+.little-description{
+    font-size: 1.8rem;
+    width:60%;
+    margin-left:20%;
+    line-height: 3rem;
+    
+
+}
+
+/*little description paragraph*/
+
+/*  -----------------end reusable  component------------*/
+
+
+/*  header  component*/
+header{
+background-image:linear-gradient(rgba(135,80,156,0.9),rgba(135,80,156,0.9)), url(../img/bg_header.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center center;
+background-attachment: fixed; /*important to keep background while scroll downwards*/
+height: 85vh;
+position:relative;
+}
+
+.logo{
+    height:3.5rem;
+    width: auto;
+    margin-top: 2.0rem ;
+    float: left;
+}
+/*  main-nav  component*/
+.main-nav{
+    float:right;
+    margin-top: 40px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform:uppercase ;
+    padding: .6rem 1rem;
+    border-radius: .5rem;
+    background: rgba(100,58,121,0);
+    display: inline-block;
+    font-size: 1.6rem;
+    transition:.5s;
+    
+}
+
+.main-nav li:first-child{
+    margin-left: 0px;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    background: rgba(100,58,121,1);
+
+}
+.active{
+    background:rgba(100,58,121,1);
+}
+
+.hero-text-box{
+position: absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align: center;
+}
+.btn-hero:link,.btn-hero:visited{
+    background: #eb7d4b;
+    border-color:#c86a40;
+    font-size: 1.6rem5;
+}
+
+/*------------  end header  component---------------*/
+
+/*----------------services section------------------*/
+.services-section{
+    color: #fff;
+    text-align: center;
+    
+    background-image:linear-gradient(rgba(23,94,160,0.9),rgba(23,94,160,0.9)), url(../img/services5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center top;
+
+}
+.services-section h2::after{
+    background: #14a58c;
+
+}
+.services-icon{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+/*------------end services section------------------*/
+/*------------team section------------------*/
+.team-section{
+    background-image:linear-gradient(rgba(231,241,248,0.9),rgba(231,241,248,0.9)),url(../img/bg_header.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed; /*important to keep background while scroll downwards*/
+}
+.team-section h2{
+    color:#3c4761;
+}
+.team-section h2::after {
+    content: "";
+    color:#c8d9e5;
+}
+.team-member{
+    margin-top: 4.5rem;  
+    margin-bottom: 3.5rem;
+    height: 10rem;
+    width: 10rem;   
+    border-radius: 50%;
+}
+.team-member h3{
+    color: #27283d;
+}
+.role{
+    color:#30bae7;
+    font-size: 1.5rem;
+    text-transform:capitalize;
+    margin-top:.5rem;
+}
+.team-section .box p{
+    color: #3c4761;
+}
+.social-link{
+    margin-top: 4.5rem;   
+}
+.social-link ul li{
+    display: inline-block;
+    margin:0 .5rem;
+}
+.social-link ul li a:link{
+    color:#fff;
+  
+}
+.social-link ul li a:link i::before{
+   
+    width:2rem;
+    height:2rem;
+    display:inline-block;
+    font-size: 2rem;
+    padding:1rem;
+    transition:.5s;
+} 
+.social-link ul li a:hover i::before{
+    color:#393939; 
+    transform:rotate(360deg);
+} 
+
+/*------------end team section------------------*/
+/*------------Skill section------------------*/
+.skill-section{
+    background-image:linear-gradient(rgba(196, 222, 247, 0.9),rgba(196, 222, 247,0.9)), url(../img/services5.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+    
+    color: #3c4761;
+    text-align: center;
+}
+.skill-section h2{
+    color: #c86a40;
+    text-align: center;
+}
+.skill-section h2::after{
+   content: "";
+   display: block;
+   background-color:#dfe8ed;
+
+}
+.skill-section h3{
+   color:#3c4761;
+
+
+}
+.skill-section .box{
+    margin-top: 4.5rem;
+ }
+ svg.radial-progress circle{
+     stroke-width:5 ;
+ }
+ svg.radial-progress text{
+     fill: #393939;
+     font-size: 1.5rem;
+
+ }
+ svg.web-design circle{
+     stroke:#30bae7;
+ }
+ svg.web-dev circle{
+    stroke:#df028a;
+}
+svg.ui circle{
+    stroke:#27e002;
+}
+svg.graphic circle{
+    stroke:#05eb6c;
+}
+/*------------end Skill section------------------*/
+
+/*------------portfolio section------------------*/
+.portfolio-section{
+    background:linear-gradient(rgba(255,221,153,0.9),rgba(255,221,153,0.9)),url('../img/portfolio_bg.jpg');
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+.portfolio-section .col:nth-child(3){
+    margin-left: 0;
+}
+.portfolio-section h2{
+    color:#3c4761;
+}
+.portfolio-section h2::after{
+    content: "";
+    background-color: #e5c37f;
+}
+.portfolio-section col 
+.portfolio-filter{
+    margin: 4.5rem 0;
+}
+.portfolio-filter button{
+    background: #ebc985;
+    font-size: 1.8rem;
+    padding:1rem 2rem;
+    border: 0;
+    border-radius:.5rem;
+    text-transform: uppercase;
+    color:#3c4761; 
+    margin:0 .5rem;
+    transition: .5s;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .3rem .5rem rgba(60,71,97,0.5);
+ 
+}
+.portfolio-image{
+    width:100%;
+    height:30rem;
+}
+.portfolio-section .btn-load-more{
+    background:#17c2a4 ;
+    border-color:#14a58c ;
+}
+.portfolio-section .mixitup-control-active{
+    background: #fff;
+  
+}
+/*------------end portfolio section------------------*/
+.testimonial-section{
+    background-image:linear-gradient(rgba(196, 222, 247, 0.9),rgba(196, 222, 247,0.9)), url(../img/services5.jpg);
+    background-size: cover;
+    background-position:center center;
+    text-align: center;
+    background-repeat:no-repeat;
+}
+.testimonial-section .row .span_1_of_2:nth-child(3){
+    margin-left: 0;
+}
+
+/*------------testimonial section------------------*/
+.testimonial-section{
+    background-image:linear-gradient(rgba(196, 222, 247, 0.9),rgba(196, 222, 247,0.9)), url(../img/services5.jpg);
+    background-size: cover;
+    background-position:center center;
+    text-align: center;
+    background-repeat:no-repeat;
+
+}
+.testimonial-section .row .span_1_of_2:nth-child(3){
+    margin-left: 0;
+}
+.testimonial-section .little-description{
+    text-align: center;
+    color:#27283d;
+}
+.testimonial-section .col:nth-child(1),
+.testimonial-section .col:nth-child(2) {
+    margin-top:2rem;
+}
+.testimonial-section .col:nth-child(3),
+.testimonial-section .col:nth-child(4) {
+    margin-top:8rem;
+}
+.client-photo{
+    width: 10rem;
+    float:left;
+}
+.client-photo img{
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.client-review{
+    width:30rem;
+    float:left;
+}
+/*------------end testimonial section------------------*/
+/*------------  Contact section------------------*/
+.contact-section{
+    background:linear-gradient(rgba(60,84,153,0.9),rgba(60,84,153,0.9)),url('../img/portfolio_bg.jpg');
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+    text-align: center;
+    text-align: center;
+    color: #fff;
+}
+.contact-section h2::after{
+     background: #273a71;
+}
+.contact-section form{
+    margin-top:5rem;
+    width:70%;
+    margin-left: 15%;
+}
+.contact-section textarea{
+    height:20rem;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    background: #273a71;
+    border:.1rem solid #273a71;
+    width:100%;
+    padding:1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8 rem;
+    color:#fff;
+    margin:.5rem 0;
+
+}
+.contact-section form ::placeholder{
+    color:#fff;
+    opacity: 1;
+}
+.btn-submit{
+    border:none;
+    border-bottom: .3rem solid #299ec5;
+    background: #30bae7;
+}
+.btn-submit:hover{
+    cursor:pointer;
+    background: #06698a;
+}
+.footer-section{
+    background: #364b8e;
+    padding:3rem 0;
+    text-align: center;
+    border-top: .1rem solid rgba(255,255,255,0.3);
+
+}
+.footer-section li{
+    display: inline-block;
+    margin:0 2rem;
+}
+.footer-section li a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.footer-section li a:hover{
+    color:#30b1e7;
+}
+/*------------End contact section------------------*/
